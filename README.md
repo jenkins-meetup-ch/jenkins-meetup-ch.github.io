@@ -19,6 +19,13 @@ Meetup listings' Open Graph images. Set `cover_image` to the path relative to
 `static/` and `cover_alt` to a description in the event's front matter; these
 are used both on the page and in its Open Graph metadata.
 
+Speaker profiles live in `data/speakers.yaml`. Add speaker IDs to the event's
+`speakers` front matter to display the corresponding profiles; use historical
+roles where appropriate and verify presenters against the event listing.
+Profiles can use `url` for a single link or a `links` list of `label` and `url`
+pairs for multiple links. Set `image` to the speaker's GitHub avatar URL to
+show their profile picture.
+
 ## Contributions
 
 Contributions are welcome!

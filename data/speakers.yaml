@@ -1,0 +1,37 @@
+oleg-nenashev:
+  name: Oleg Nenashev
+  image: "https://github.com/oleg-nenashev.png?size=160"
+  bio: "Jenkins core maintainer and Swiss Jenkins Meetup organizer. At the time of these events, he worked at CloudBees and contributed to Jenkins Configuration as Code and Java 11 support."
+  links:
+    - label: Website
+      url: "https://oleg.swiss/"
+    - label: GitHub
+      url: "https://github.com/oleg-nenashev"
+    - label: LinkedIn
+      url: "https://www.linkedin.com/in/onenashev/"
+    - label: X
+      url: "https://twitter.com/oleg_nenashev"
+cosmin-cojocar:
+  name: Cosmin Cojocar
+  image: "https://github.com/ccojocar.png?size=160"
+  bio: "Jenkins X contributor who presented Jenkins X and led a knowledge-sharing session on Jenkins X build packs at the Swiss meetups."
+  links:
+    - label: GitHub
+      url: "https://github.com/ccojocar"
+    - label: Meetup presentation
+      url: "https://www.meetup.com/swiss-jenkins-area-meetup/events/254221707/"
+viktor-farcic:
+  name: Viktor Farcic
+  image: "https://github.com/vfarcic.png?size=160"
+  bio: "Viktor is a published author and a member of the Google Developer Experts and Docker Captains groups. He speaks at conferences and community events about DevOps, containers, Kubernetes, microservices, CI/CD, and test-driven development. His books include DevOps Paradox and Test-Driven Java Development."
+  links:
+    - label: Website
+      url: "https://devopstoolkit.live/"
+    - label: X
+      url: "https://x.com/vfarcic"
+    - label: LinkedIn
+      url: "https://www.linkedin.com/in/viktorfarcic/"
+    - label: GitHub
+      url: "https://github.com/vfarcic"
+    - label: DevOps Paradox profile
+      url: "https://www.devopsparadox.com/host/viktor-farcic/"

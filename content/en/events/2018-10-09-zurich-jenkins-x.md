@@ -7,6 +7,7 @@ description: "Cosmin Cojocar introduced Jenkins X and CI/CD workflows on Kuberne
 meetup_url: "https://www.meetup.com/swiss-jenkins-area-meetup/events/254221707/"
 cover_image: "images/events/474166751.png"
 cover_alt: "Jenkins X mascot wearing a captain's hat"
+speakers: ["cosmin-cojocar"]
 ---
 
 On October 9 we will have a meetup at Digicomp Academy AG in Zurich. Cosmin Cojocar, a Jenkins X contributor, will make an introduction to Jenkins X ([https://jenkins-x.io/](https://jenkins-x.io/)).

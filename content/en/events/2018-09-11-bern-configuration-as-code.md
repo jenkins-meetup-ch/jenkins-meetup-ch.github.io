@@ -7,6 +7,7 @@ description: "A look at the state of Jenkins and a Configuration as Code demonst
 meetup_url: "https://www.meetup.com/swiss-jenkins-area-meetup/events/254219276/"
 cover_image: "images/events/474165412.jpg"
 cover_alt: "Jenkins mascot dressed as a mechanic holding a wrench"
+speakers: ["oleg-nenashev"]
 ---
 
 On Sep 11 we will meet at Digicomp Academy AG in Bern to talk about State of Jenkins and Configuration as Code.

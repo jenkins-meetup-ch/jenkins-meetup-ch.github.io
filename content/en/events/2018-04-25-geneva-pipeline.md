@@ -7,6 +7,7 @@ description: "An introduction to Jenkins Pipeline and its newer features with Ol
 meetup_url: "https://www.meetup.com/swiss-jenkins-area-meetup/events/249970166/"
 cover_image: "images/events/474166501.png"
 cover_alt: "Jenkins Meetup Switzerland logo with the Jenkins mascot and Swiss cross"
+speakers: ["oleg-nenashev"]
 ---
 
 Almost everybody knows Old Faithful Jenkins… and probably hates its job configuration pages, right? But there are good news: Jenkins actively adopts modern trends and evolves in order to stay relevant in the new era. One of the hottest areas is Jenkins Pipeline, which allows describing complex automation as code in Groovy-based DSLs.

@@ -7,6 +7,7 @@ description: "A Jenkins X session with Viktor Farcic on continuous delivery."
 meetup_url: "https://www.meetup.com/swiss-jenkins-area-meetup/events/261825389/"
 cover_image: "images/events/474166501.png"
 cover_alt: "Jenkins Meetup Switzerland logo with the Jenkins mascot and Swiss cross"
+speakers: ["viktor-farcic"]
 ---
 
 Viktor Farcic (the author of The DevOps Toolkit Series and Test-Driven Java Development) will be in Switzerland to give his talk "The recipe for Continuous Delivery" and a short JenkinsX demo.

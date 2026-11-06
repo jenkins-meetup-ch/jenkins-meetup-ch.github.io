@@ -9,6 +9,28 @@
     <img class="event-cover" src="{{ . | relURL }}" alt="{{ $.Params.cover_alt }}">
   {{ end }}
   <div class="event-content">{{ .Content }}</div>
+  {{ with .Params.speakers }}
+  <section class="event-speakers" aria-labelledby="speakers-heading">
+    <h2 id="speakers-heading">Speakers and presenters</h2>
+    {{ range . }}
+      {{ $speaker := index hugo.Data.speakers . }}
+      {{ if not $speaker }}{{ errorf "Unknown speaker %q on %s" . $.File.Path }}{{ end }}
+      <article class="speaker-profile">
+        {{ with $speaker.image }}<img class="speaker-avatar" src="{{ . }}" alt="" width="80" height="80" loading="lazy">{{ end }}
+        <div class="speaker-details">
+        <h3>{{ $speaker.name }}</h3>
+        <p>{{ $speaker.bio }}</p>
+        {{ with $speaker.url }}<a href="{{ . }}">{{ $speaker.link_text | default "Speaker website" }} <span aria-hidden="true">↗</span></a>{{ end }}
+        {{ with $speaker.links }}
+        <ul class="speaker-links">
+          {{ range . }}<li><a href="{{ .url }}">{{ .label }}</a></li>{{ end }}
+        </ul>
+        {{ end }}
+        </div>
+      </article>
+    {{ end }}
+  </section>
+  {{ end }}
   <a class="button" href="{{ .Params.meetup_url }}">Original Meetup listing <span aria-hidden="true">↗</span></a>
 </article>
 {{ end }}

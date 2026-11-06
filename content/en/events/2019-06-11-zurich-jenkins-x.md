@@ -7,6 +7,7 @@ description: "The Recipe for Continuous Delivery with Viktor Farcic,"
 meetup_url: "https://www.meetup.com/swiss-jenkins-area-meetup/events/261825433/"
 cover_image: "images/events/474166501.png"
 cover_alt: "Jenkins X mascot wearing a captain's hat"
+speakers: ["viktor-farcic"]
 ---
 
 ## Abstract

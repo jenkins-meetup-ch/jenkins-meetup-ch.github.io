@@ -7,6 +7,7 @@ description: "Oleg Nenashev shared the Jenkins project's experience of adding Ja
 meetup_url: "https://www.meetup.com/swiss-jenkins-area-meetup/events/255914568/"
 cover_image: "images/events/474166501.png"
 cover_alt: "Jenkins Meetup Switzerland logo with the Jenkins mascot and Swiss cross"
+speakers: ["oleg-nenashev"]
 ---
 
 Jenkins, one of the leading open-source automation servers, has not been supporting Java 9 and above since its official release. Over the last year Jenkins contributors were working towards the support of Java 11 (Jenkins JEP-211). Jenkins has a huge and sometimes legacy Java/Groovy/native codebase, includes DSL engines, and depends on many upstream libraries and modules (including ones deleted from Java 11). It was a thorny way, but Java 11 support is almost ready to be released.

@@ -7,6 +7,7 @@ description: "A day of open-source contributions, knowledge sharing, and Jenkins
 meetup_url: "https://www.meetup.com/swiss-jenkins-area-meetup/events/265016315/"
 cover_image: "images/events/485043156.png"
 cover_alt: "Hacktoberfest 2019 artwork"
+speakers: ["oleg-nenashev"]
 ---
 
 The 2019 Hacktoberfest gathering invited participants to contribute to Jenkins
