@@ -1,5 +1,7 @@
 ---
 title: Jenkins Meetup Switzerland
+cover_image: "images/cover-image.png"
+cover_alt: "Jenkins Meetup Switzerland logo with the Jenkins mascot and Swiss cross"
 ---
 
 Jenkins Meetup Switzerland brought together users, administrators, and developers

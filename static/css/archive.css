@@ -47,6 +47,7 @@ h2 { font-size: clamp(2rem, 3vw, 2.8rem); margin: .5rem 0; }
 .event-detail { max-width: 750px; padding: 4rem 0 6rem; }
 .back-link { display: inline-block; margin-bottom: 2rem; font-weight: 700; }
 .venue { color: var(--muted); margin-top: .25rem; }
+.event-cover { display: block; max-width: 100%; height: auto; margin: 2rem 0; }
 .event-content { margin: 2rem 0; font-size: 1.1rem; }
 .site-footer { background: #202b34; color: #e7ecec; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.5rem 0; font-size: .9rem; }

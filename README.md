@@ -14,6 +14,11 @@ listing for its status and location; cancelled, online-only, and overseas events
 are outside this archive's scope. The archive is incomplete because the full
 past-events list on Meetup may require signing in.
 
+Event covers are stored in `static/images/events/` and sourced from the original
+Meetup listings' Open Graph images. Set `cover_image` to the path relative to
+`static/` and `cover_alt` to a description in the event's front matter; these
+are used both on the page and in its Open Graph metadata.
+
 ## Contributions
 
 Contributions are welcome!

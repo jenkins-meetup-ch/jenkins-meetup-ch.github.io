@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+  {{ if or .IsHome (and .IsSection (eq .Section "events")) (and .IsPage (eq .Section "events")) }}
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ site.Title }}">
+  {{ with .Params.cover_image }}
+  <meta property="og:image" content="{{ . | absURL }}">
+  <meta property="og:image:alt" content="{{ $.Params.cover_alt }}">
+  {{ end }}
+  {{ end }}
   <link rel="stylesheet" href="{{ "css/archive.css" | relURL }}">
 </head>
 <body>
