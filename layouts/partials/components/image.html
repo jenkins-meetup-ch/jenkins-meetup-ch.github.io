@@ -1,0 +1,16 @@
+{{ if in .image "http" }}
+  <img 
+    src="{{ .image }}" 
+    loading="lazy" 
+    class="rounded-2xl" 
+    alt="{{ $.heading }}">
+{{ else }}
+  {{ with resources.GetMatch .image }}
+  {{ $imgSmall := .Resize "280x" }}  
+  <img 
+      src="{{ $imgSmall.RelPermalink }}" 
+      loading="lazy" 
+      class="rounded-2xl" 
+      alt="{{ $.heading }}">
+  {{ end }}
+{{ end }}
