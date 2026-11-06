@@ -1,0 +1,6 @@
+<article class="event-card">
+  <p class="event-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time> <span aria-hidden="true">·</span> {{ .Params.location }}</p>
+  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  <p>{{ .Description }}</p>
+  <a class="event-link" href="{{ .RelPermalink }}">Event details <span aria-hidden="true">→</span></a>
+</article>

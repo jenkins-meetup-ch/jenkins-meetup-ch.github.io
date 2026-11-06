@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="event-detail">
+  <a class="back-link" href="{{ "events/" | relURL }}">← All events</a>
+  <p class="eyebrow">Past event</p>
+  <h1>{{ .Title }}</h1>
+  <p class="event-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time> <span aria-hidden="true">·</span> {{ .Params.location }}</p>
+  {{ with .Params.venue }}<p class="venue">{{ . }}</p>{{ end }}
+  <div class="event-content">{{ .Content }}</div>
+  <a class="button" href="{{ .Params.meetup_url }}">Original Meetup listing <span aria-hidden="true">↗</span></a>
+</article>
+{{ end }}

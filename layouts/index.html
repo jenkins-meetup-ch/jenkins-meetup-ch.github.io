@@ -1,18 +1,28 @@
-{{define "main"}}
-<div class="flex-l mt2 mw8 center">
-  <div class="nested-copy-line-height lh-copy f4 nested-links {{ $.Param "text_color" | default "mid-gray" }}">
-    {{ .Content }}
+{{ define "main" }}
+<section class="hero">
+  <div>
+    <p class="eyebrow">A community archive</p>
+    <h1>{{ .Title }}</h1>
+    <div class="intro">{{ .Content }}</div>
+    <a class="button" href="{{ "events/" | relURL }}">Explore the events <span aria-hidden="true">→</span></a>
   </div>
-  
-  
-  <article class="center cf pv5 ph3 ph4-ns mw7">  
-  {{ $blocks := .Params.blocks }}
-  {{ range $blocks }}
-    {{ $file := (printf "%s%s%s" "blocks/" .block ".html" ) }}
-    {{ partial $file . }}
-  {{ end }}
-
-
-  </article>
-</div>
+  <figure class="hero-logo">
+    <img src="https://www.jenkins.io/images/logos/switzerland/switzerland.png" alt="Swiss Jenkins Area Meetup logo" width="400" height="600">
+    <figcaption>Swiss Jenkins Area Meetup logo by CloudBees for the <a href="https://www.jenkins.io/">Jenkins project</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. <a href="https://www.jenkins.io/artwork/">Artwork source</a>.</figcaption>
+  </figure>
+</section>
+<section class="event-section" aria-labelledby="recent-events">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">From the archive</p>
+      <h2 id="recent-events">Meetups in Switzerland</h2>
+    </div>
+    <a href="{{ "events/" | relURL }}">View all events →</a>
+  </div>
+  <div class="event-grid">
+    {{ range first 3 (where site.RegularPages "Section" "events").ByDate.Reverse }}
+      {{ partial "event-card.html" . }}
+    {{ end }}
+  </div>
+</section>
 {{ end }}

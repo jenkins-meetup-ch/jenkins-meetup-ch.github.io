@@ -1,72 +1,20 @@
-baseURL = 'http://api-ne.ch/'
-languageCode = 'en-us'
-title = 'API Neuchâtel'
-theme = 'github.com/gohugo-ananke/ananke/v2'
-
-DefaultContentLanguage = "fr"
-SectionPagesMenu = "main"
-Paginate = 10
-googleAnalytics = ""
+baseURL = 'https://jenkins-meetup-ch.github.io/'
+title = 'Jenkins Meetup Switzerland'
+defaultContentLanguage = 'en'
 enableRobotsTXT = true
 
 [module]
-[[module.imports]]
-  disable = false
-  ignoreConfig = false
-  ignoreImports = false
-  path = 'github.com/gohugo-ananke/ananke/v2'
+  [[module.imports]]
+    path = 'github.com/gohugo-ananke/ananke/v2'
 
 [languages]
-  [languages.fr]
-    title = "Jenkins Meetup Switzerland"
+  [languages.en]
+    locale = 'en'
+    contentDir = 'content/en'
     weight = 1
-    contentDir = "content/fr"
-
-[sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
 
 [params]
-  text_color = ""
-  author = ""
-  favicon = "images/logo/favicon.png"
-  site_logo = "images/logo/logo-wide-white.png"
-  mainSections = ["evenements"]
-  description = "L’association des professionnels de l’informatique (API) soutient le secteur informatique dans le canton de Neuchâtel et au-delà"
-  background_color_class = "bg-black"
-  recent_posts_number = 5
+  description = 'An archive of Jenkins Meetup Switzerland and its in-person events.'
 
-[[params.ananke_socials]]
-name = "linkedin"
-url = "https://www.linkedin.com/company/api-neuchatel"
-
-[[params.ananke_socials]]
-name = "youtube"
-url = "https://www.youtube.com/@api-ne"
-
-[[params.ananke_socials]]
-name = "github"
-url = "https://github.com/api-neuchatel/"
-
-[[params.ananke_socials]]
-name = "facebook"
-url = "https://www.facebook.com/AssociationAPI/"
-
-[[params.ananke_socials]]
-name = "twitter"
-url = "https://twitter.com/API_Neuchatel"
-
-[menu]
-[[menu.main]]
-  name = 'Home'
-  pageRef = '/'
-  weight = 10
-[[menu.main]]
-  name = 'Manifeste'
-  pageRef = '/manifeste'
-  weight = 20
-[[menu.main]]
-  name = 'Contacts'
-  pageRef = '/contact'
-  weight = 50
+[privacy.youtube]
+  privacyEnhanced = true

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+  <link rel="stylesheet" href="{{ "css/archive.css" | relURL }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-name" href="{{ "" | relURL }}">Jenkins Meetup <span>Switzerland</span></a>
+      <nav aria-label="Main navigation">
+        <a href="{{ "" | relURL }}">Home</a>
+        <a href="{{ "events/" | relURL }}">Events</a>
+        <a href="https://www.meetup.com/swiss-jenkins-area-meetup/">Meetup ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">{{ block "main" . }}{{ end }}</main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Jenkins Meetup Switzerland · Community archive</p>
+      <a href="https://www.meetup.com/swiss-jenkins-area-meetup/">Visit the Meetup group ↗</a>
+    </div>
+  </footer>
+</body>
+</html>
